@@ -1,0 +1,676 @@
+{
+  "date": "2026-09-28",
+  "phase": "Phase 8 Week 1",
+  "workflowCount": 94,
+  "metrics": {
+    "claude-api": {
+      "confidence": 0.95,
+      "escalation": 0.05,
+      "costPerDecision": 0.001,
+      "dailyVolume": 1000,
+      "annualValue": 22539
+    },
+    "context-mgmt": {
+      "confidence": 0.98,
+      "escalation": 0.02,
+      "costPerDecision": 0.0005,
+      "dailyVolume": 800,
+      "annualValue": 18600
+    },
+    "rate-limiting": {
+      "confidence": 1,
+      "escalation": 0,
+      "costPerDecision": 0.0001,
+      "dailyVolume": 10000,
+      "annualValue": 237250
+    },
+    "caching": {
+      "confidence": 0.99,
+      "escalation": 0.01,
+      "costPerDecision": 0.0002,
+      "dailyVolume": 5000,
+      "annualValue": 117439
+    },
+    "auth": {
+      "confidence": 1,
+      "escalation": 0,
+      "costPerDecision": 0.0003,
+      "dailyVolume": 2000,
+      "annualValue": 47450
+    },
+    "monitoring": {
+      "confidence": 0.96,
+      "escalation": 0.04,
+      "costPerDecision": 0.0005,
+      "dailyVolume": 1500,
+      "annualValue": 34164
+    },
+    "logging": {
+      "confidence": 0.97,
+      "escalation": 0.03,
+      "costPerDecision": 0.0004,
+      "dailyVolume": 3000,
+      "annualValue": 69040
+    },
+    "database": {
+      "confidence": 0.98,
+      "escalation": 0.02,
+      "costPerDecision": 0.002,
+      "dailyVolume": 4000,
+      "annualValue": 93002
+    },
+    "queue": {
+      "confidence": 0.97,
+      "escalation": 0.03,
+      "costPerDecision": 0.001,
+      "dailyVolume": 2500,
+      "annualValue": 57533
+    },
+    "health-check": {
+      "confidence": 1,
+      "escalation": 0,
+      "costPerDecision": 0.0001,
+      "dailyVolume": 1000,
+      "annualValue": 23725
+    },
+    "error-handling": {
+      "confidence": 0.94,
+      "escalation": 0.06,
+      "costPerDecision": 0.0008,
+      "dailyVolume": 800,
+      "annualValue": 17841
+    },
+    "telemetry": {
+      "confidence": 0.95,
+      "escalation": 0.05,
+      "costPerDecision": 0.0006,
+      "dailyVolume": 900,
+      "annualValue": 20285
+    },
+    "lead-scoring": {
+      "confidence": 0.9,
+      "escalation": 0.1,
+      "costPerDecision": 0.05,
+      "dailyVolume": 150,
+      "annualValue": 3203
+    },
+    "email-classification": {
+      "confidence": 0.92,
+      "escalation": 0.08,
+      "costPerDecision": 0.04,
+      "dailyVolume": 200,
+      "annualValue": 4365
+    },
+    "sentiment-analysis": {
+      "confidence": 0.88,
+      "escalation": 0.12,
+      "costPerDecision": 0.06,
+      "dailyVolume": 120,
+      "annualValue": 2505
+    },
+    "intent-detection": {
+      "confidence": 0.89,
+      "escalation": 0.11,
+      "costPerDecision": 0.05,
+      "dailyVolume": 140,
+      "annualValue": 2956
+    },
+    "content-moderation": {
+      "confidence": 0.95,
+      "escalation": 0.05,
+      "costPerDecision": 0.03,
+      "dailyVolume": 180,
+      "annualValue": 4057
+    },
+    "priority-routing": {
+      "confidence": 0.91,
+      "escalation": 0.09,
+      "costPerDecision": 0.04,
+      "dailyVolume": 160,
+      "annualValue": 3454
+    },
+    "recommendation": {
+      "confidence": 0.87,
+      "escalation": 0.13,
+      "costPerDecision": 0.07,
+      "dailyVolume": 100,
+      "annualValue": 2064
+    },
+    "anomaly-detection": {
+      "confidence": 0.86,
+      "escalation": 0.14,
+      "costPerDecision": 0.08,
+      "dailyVolume": 90,
+      "annualValue": 1836
+    },
+    "lead-segmentation": {
+      "confidence": 0.91,
+      "escalation": 0.09,
+      "costPerDecision": 0.05,
+      "dailyVolume": 120,
+      "annualValue": 2591
+    },
+    "deal-prediction": {
+      "confidence": 0.89,
+      "escalation": 0.11,
+      "costPerDecision": 0.06,
+      "dailyVolume": 100,
+      "annualValue": 2112
+    },
+    "sales-forecast": {
+      "confidence": 0.87,
+      "escalation": 0.13,
+      "costPerDecision": 0.07,
+      "dailyVolume": 80,
+      "annualValue": 1651
+    },
+    "churn-risk": {
+      "confidence": 0.88,
+      "escalation": 0.12,
+      "costPerDecision": 0.06,
+      "dailyVolume": 110,
+      "annualValue": 2297
+    },
+    "account-segment": {
+      "confidence": 0.92,
+      "escalation": 0.08,
+      "costPerDecision": 0.04,
+      "dailyVolume": 140,
+      "annualValue": 3056
+    },
+    "campaign-predict": {
+      "confidence": 0.9,
+      "escalation": 0.1,
+      "costPerDecision": 0.05,
+      "dailyVolume": 130,
+      "annualValue": 2776
+    },
+    "content-recommend": {
+      "confidence": 0.89,
+      "escalation": 0.11,
+      "costPerDecision": 0.05,
+      "dailyVolume": 150,
+      "annualValue": 3167
+    },
+    "email-optimize": {
+      "confidence": 0.91,
+      "escalation": 0.09,
+      "costPerDecision": 0.04,
+      "dailyVolume": 170,
+      "annualValue": 3670
+    },
+    "audience-segment": {
+      "confidence": 0.88,
+      "escalation": 0.12,
+      "costPerDecision": 0.06,
+      "dailyVolume": 110,
+      "annualValue": 2297
+    },
+    "ad-targeting": {
+      "confidence": 0.87,
+      "escalation": 0.13,
+      "costPerDecision": 0.07,
+      "dailyVolume": 90,
+      "annualValue": 1858
+    },
+    "ticket-priority": {
+      "confidence": 0.91,
+      "escalation": 0.09,
+      "costPerDecision": 0.04,
+      "dailyVolume": 160,
+      "annualValue": 3454
+    },
+    "kb-matching": {
+      "confidence": 0.85,
+      "escalation": 0.15,
+      "costPerDecision": 0.08,
+      "dailyVolume": 100,
+      "annualValue": 2017
+    },
+    "response-time": {
+      "confidence": 0.89,
+      "escalation": 0.11,
+      "costPerDecision": 0.05,
+      "dailyVolume": 120,
+      "annualValue": 2534
+    },
+    "agent-assign": {
+      "confidence": 0.88,
+      "escalation": 0.12,
+      "costPerDecision": 0.06,
+      "dailyVolume": 130,
+      "annualValue": 2714
+    },
+    "escalation-route": {
+      "confidence": 0.9,
+      "escalation": 0.1,
+      "costPerDecision": 0.05,
+      "dailyVolume": 140,
+      "annualValue": 2989
+    },
+    "dashboard-gen": {
+      "confidence": 0.93,
+      "escalation": 0.07,
+      "costPerDecision": 0.03,
+      "dailyVolume": 200,
+      "annualValue": 4413
+    },
+    "trend-analysis": {
+      "confidence": 0.89,
+      "escalation": 0.11,
+      "costPerDecision": 0.05,
+      "dailyVolume": 150,
+      "annualValue": 3167
+    },
+    "anomaly-alert": {
+      "confidence": 0.92,
+      "escalation": 0.08,
+      "costPerDecision": 0.04,
+      "dailyVolume": 180,
+      "annualValue": 3929
+    },
+    "kpi-tracking": {
+      "confidence": 0.94,
+      "escalation": 0.06,
+      "costPerDecision": 0.03,
+      "dailyVolume": 220,
+      "annualValue": 4906
+    },
+    "ltv-predict": {
+      "confidence": 0.87,
+      "escalation": 0.13,
+      "costPerDecision": 0.07,
+      "dailyVolume": 80,
+      "annualValue": 1651
+    },
+    "crosssell": {
+      "confidence": 0.88,
+      "escalation": 0.12,
+      "costPerDecision": 0.06,
+      "dailyVolume": 110,
+      "annualValue": 2297
+    },
+    "churn-integrate": {
+      "confidence": 0.89,
+      "escalation": 0.11,
+      "costPerDecision": 0.05,
+      "dailyVolume": 120,
+      "annualValue": 2534
+    },
+    "personalize": {
+      "confidence": 0.86,
+      "escalation": 0.14,
+      "costPerDecision": 0.08,
+      "dailyVolume": 90,
+      "annualValue": 1836
+    },
+    "doc-process": {
+      "confidence": 0.9,
+      "escalation": 0.1,
+      "costPerDecision": 0.05,
+      "dailyVolume": 140,
+      "annualValue": 2989
+    },
+    "workflow-auto": {
+      "confidence": 0.91,
+      "escalation": 0.09,
+      "costPerDecision": 0.04,
+      "dailyVolume": 160,
+      "annualValue": 3454
+    },
+    "schedule-opt": {
+      "confidence": 0.88,
+      "escalation": 0.12,
+      "costPerDecision": 0.06,
+      "dailyVolume": 100,
+      "annualValue": 2088
+    },
+    "resource-alloc": {
+      "confidence": 0.87,
+      "escalation": 0.13,
+      "costPerDecision": 0.07,
+      "dailyVolume": 85,
+      "annualValue": 1754
+    },
+    "ollama-route": {
+      "confidence": 0.92,
+      "escalation": 0.08,
+      "costPerDecision": 0.04,
+      "dailyVolume": 120,
+      "annualValue": 2619
+    },
+    "model-select": {
+      "confidence": 0.91,
+      "escalation": 0.09,
+      "costPerDecision": 0.04,
+      "dailyVolume": 140,
+      "annualValue": 3023
+    },
+    "perf-optimize": {
+      "confidence": 0.9,
+      "escalation": 0.1,
+      "costPerDecision": 0.05,
+      "dailyVolume": 100,
+      "annualValue": 2135
+    },
+    "fallback-strat": {
+      "confidence": 0.89,
+      "escalation": 0.11,
+      "costPerDecision": 0.05,
+      "dailyVolume": 110,
+      "annualValue": 2323
+    },
+    "model-ensemble": {
+      "confidence": 0.88,
+      "escalation": 0.12,
+      "costPerDecision": 0.06,
+      "dailyVolume": 90,
+      "annualValue": 1879
+    },
+    "scene-detect": {
+      "confidence": 0.89,
+      "escalation": 0.11,
+      "costPerDecision": 0.05,
+      "dailyVolume": 75,
+      "annualValue": 1584
+    },
+    "content-summ": {
+      "confidence": 0.87,
+      "escalation": 0.13,
+      "costPerDecision": 0.07,
+      "dailyVolume": 60,
+      "annualValue": 1238
+    },
+    "subtitle-gen": {
+      "confidence": 0.91,
+      "escalation": 0.09,
+      "costPerDecision": 0.04,
+      "dailyVolume": 85,
+      "annualValue": 1835
+    },
+    "quality-assess": {
+      "confidence": 0.88,
+      "escalation": 0.12,
+      "costPerDecision": 0.06,
+      "dailyVolume": 70,
+      "annualValue": 1461
+    },
+    "market-analyze": {
+      "confidence": 0.85,
+      "escalation": 0.15,
+      "costPerDecision": 0.08,
+      "dailyVolume": 150,
+      "annualValue": 3025
+    },
+    "order-execute": {
+      "confidence": 0.93,
+      "escalation": 0.07,
+      "costPerDecision": 0.03,
+      "dailyVolume": 200,
+      "annualValue": 4413
+    },
+    "risk-manage": {
+      "confidence": 0.92,
+      "escalation": 0.08,
+      "costPerDecision": 0.04,
+      "dailyVolume": 180,
+      "annualValue": 3929
+    },
+    "portfolio-rebal": {
+      "confidence": 0.89,
+      "escalation": 0.11,
+      "costPerDecision": 0.05,
+      "dailyVolume": 120,
+      "annualValue": 2534
+    },
+    "auto-trade": {
+      "confidence": 0.87,
+      "escalation": 0.13,
+      "costPerDecision": 0.07,
+      "dailyVolume": 110,
+      "annualValue": 2270
+    },
+    "invoice-process": {
+      "confidence": 0.9,
+      "escalation": 0.1,
+      "costPerDecision": 0.05,
+      "dailyVolume": 130,
+      "annualValue": 2776
+    },
+    "contract-analyze": {
+      "confidence": 0.88,
+      "escalation": 0.12,
+      "costPerDecision": 0.06,
+      "dailyVolume": 100,
+      "annualValue": 2088
+    },
+    "meeting-transcribe": {
+      "confidence": 0.86,
+      "escalation": 0.14,
+      "costPerDecision": 0.08,
+      "dailyVolume": 80,
+      "annualValue": 1632
+    },
+    "threat-detect": {
+      "confidence": 0.94,
+      "escalation": 0.06,
+      "costPerDecision": 0.03,
+      "dailyVolume": 160,
+      "annualValue": 3568
+    },
+    "compliance-check": {
+      "confidence": 0.92,
+      "escalation": 0.08,
+      "costPerDecision": 0.04,
+      "dailyVolume": 140,
+      "annualValue": 3056
+    },
+    "lead-qualify": {
+      "confidence": 0.92,
+      "escalation": 0.08,
+      "costPerDecision": 0.04,
+      "dailyVolume": 180,
+      "annualValue": 3929
+    },
+    "opp-score": {
+      "confidence": 0.9,
+      "escalation": 0.1,
+      "costPerDecision": 0.05,
+      "dailyVolume": 150,
+      "annualValue": 3203
+    },
+    "deal-prob": {
+      "confidence": 0.88,
+      "escalation": 0.12,
+      "costPerDecision": 0.06,
+      "dailyVolume": 120,
+      "annualValue": 2505
+    },
+    "hook-select": {
+      "confidence": 0.98,
+      "escalation": 0.02,
+      "costPerDecision": 0.01,
+      "dailyVolume": 250,
+      "annualValue": 5813
+    },
+    "content-timing": {
+      "confidence": 0.87,
+      "escalation": 0.13,
+      "costPerDecision": 0.07,
+      "dailyVolume": 100,
+      "annualValue": 2064
+    },
+    "ticket-priority-v2": {
+      "confidence": 0.91,
+      "escalation": 0.09,
+      "costPerDecision": 0.04,
+      "dailyVolume": 160,
+      "annualValue": 3454
+    },
+    "agent-assign-v2": {
+      "confidence": 0.89,
+      "escalation": 0.11,
+      "costPerDecision": 0.05,
+      "dailyVolume": 140,
+      "annualValue": 2956
+    },
+    "risk-assess": {
+      "confidence": 0.85,
+      "escalation": 0.15,
+      "costPerDecision": 0.08,
+      "dailyVolume": 110,
+      "annualValue": 2218
+    },
+    "churn-pred": {
+      "confidence": 0.9,
+      "escalation": 0.1,
+      "costPerDecision": 0.05,
+      "dailyVolume": 130,
+      "annualValue": 2776
+    },
+    "dup-detect": {
+      "confidence": 0.91,
+      "escalation": 0.09,
+      "costPerDecision": 0.04,
+      "dailyVolume": 150,
+      "annualValue": 3238
+    },
+    "phishing-detect": {
+      "confidence": 0.98,
+      "escalation": 0.02,
+      "costPerDecision": 0.01,
+      "dailyVolume": 220,
+      "annualValue": 5115
+    },
+    "policy-comply": {
+      "confidence": 1,
+      "escalation": 0,
+      "costPerDecision": 0.005,
+      "dailyVolume": 200,
+      "annualValue": 4745
+    },
+    "comment-moderate": {
+      "confidence": 1,
+      "escalation": 0,
+      "costPerDecision": 0.005,
+      "dailyVolume": 280,
+      "annualValue": 6643
+    },
+    "spam-detect": {
+      "confidence": 1,
+      "escalation": 0,
+      "costPerDecision": 0.005,
+      "dailyVolume": 250,
+      "annualValue": 5931
+    },
+    "sentiment-v2": {
+      "confidence": 0.89,
+      "escalation": 0.11,
+      "costPerDecision": 0.05,
+      "dailyVolume": 110,
+      "annualValue": 2323
+    },
+    "email-opt-v2": {
+      "confidence": 0.95,
+      "escalation": 0.05,
+      "costPerDecision": 0.025,
+      "dailyVolume": 160,
+      "annualValue": 3606
+    },
+    "dup-leads": {
+      "confidence": 0.92,
+      "escalation": 0.08,
+      "costPerDecision": 0.04,
+      "dailyVolume": 170,
+      "annualValue": 3711
+    },
+    "upsell-opp": {
+      "confidence": 0.88,
+      "escalation": 0.12,
+      "costPerDecision": 0.06,
+      "dailyVolume": 100,
+      "annualValue": 2088
+    },
+    "feature-priority": {
+      "confidence": 0.87,
+      "escalation": 0.13,
+      "costPerDecision": 0.07,
+      "dailyVolume": 85,
+      "annualValue": 1754
+    },
+    "content-perf": {
+      "confidence": 0.93,
+      "escalation": 0.07,
+      "costPerDecision": 0.03,
+      "dailyVolume": 190,
+      "annualValue": 4192
+    },
+    "phishing-v2": {
+      "confidence": 0.98,
+      "escalation": 0.02,
+      "costPerDecision": 0.01,
+      "dailyVolume": 180,
+      "annualValue": 4185
+    },
+    "dup-leads-v2": {
+      "confidence": 0.92,
+      "escalation": 0.06,
+      "costPerDecision": 0.04,
+      "dailyVolume": 220,
+      "annualValue": 4906
+    },
+    "churn-pred-v2": {
+      "confidence": 0.88,
+      "escalation": 0.1,
+      "costPerDecision": 0.06,
+      "dailyVolume": 150,
+      "annualValue": 3203
+    },
+    "email-subj-opt": {
+      "confidence": 0.95,
+      "escalation": 0.03,
+      "costPerDecision": 0.025,
+      "dailyVolume": 140,
+      "annualValue": 3222
+    },
+    "policy-violation": {
+      "confidence": 0.97,
+      "escalation": 0.02,
+      "costPerDecision": 0.01,
+      "dailyVolume": 250,
+      "annualValue": 5813
+    },
+    "feature-request-pri": {
+      "confidence": 0.87,
+      "escalation": 0.11,
+      "costPerDecision": 0.07,
+      "dailyVolume": 80,
+      "annualValue": 1689
+    },
+    "upsell-opp-v2": {
+      "confidence": 0.89,
+      "escalation": 0.09,
+      "costPerDecision": 0.06,
+      "dailyVolume": 120,
+      "annualValue": 2591
+    },
+    "content-perf-pred": {
+      "confidence": 0.93,
+      "escalation": 0.05,
+      "costPerDecision": 0.03,
+      "dailyVolume": 110,
+      "annualValue": 2479
+    }
+  },
+  "summary": {
+    "avgConfidence": 0.9126595744680853,
+    "avgEscalation": 0.08595744680851064,
+    "totalDailyVolume": 43850,
+    "targets": {
+      "confidence": 0.91,
+      "escalation": 0.1,
+      "costPerDecision": 0.048,
+      "annualValue": 9151000
+    }
+  }
+}
