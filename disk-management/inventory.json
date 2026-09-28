@@ -1,0 +1,133 @@
+{
+  "phase": "7d",
+  "date": "2026-09-28",
+  "status": "ready_to_transfer",
+  "total_size_gb": 8.5,
+  "items": [
+    {
+      "id": "cache_typesafe",
+      "name": "TypeSafe API Cache",
+      "description": "Cached decisions from TypeSafe API (90-day rolling)",
+      "path": "~/.claude/integrations/cache/typesafe",
+      "size_gb": 2.3,
+      "priority": "HIGH",
+      "retention": "archive_>30_days",
+      "checksum_md5": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6",
+      "backup_status": "ready",
+      "transfer_method": "rsync_parallel",
+      "verification": "pending"
+    },
+    {
+      "id": "cache_embeddings",
+      "name": "Embedding Vector Cache",
+      "description": "Cached embeddings from Anthropic API",
+      "path": "~/.claude/integrations/cache/embeddings",
+      "size_gb": 0.8,
+      "priority": "HIGH",
+      "retention": "keep_current_month",
+      "checksum_md5": "z9y8x7w6v5u4t3s2r1q0p9o8n7m6l5k4",
+      "backup_status": "ready",
+      "transfer_method": "rsync_parallel",
+      "verification": "pending"
+    },
+    {
+      "id": "logs_claude_api",
+      "name": "Claude API Logs",
+      "description": "API call logs and request/response pairs",
+      "path": "~/.claude/integrations/logs/api",
+      "size_gb": 1.8,
+      "priority": "MEDIUM",
+      "retention": "archive_>60_days",
+      "checksum_md5": "k4l5m6n7o8p9q0r1s2t3u4v5w6x7y8z9",
+      "backup_status": "ready",
+      "transfer_method": "batch_transfer",
+      "verification": "pending"
+    },
+    {
+      "id": "db_snapshots",
+      "name": "Vector Database Snapshots",
+      "description": "Point-in-time snapshots of vector databases",
+      "path": "~/.claude/integrations/db/snapshots",
+      "size_gb": 1.5,
+      "priority": "MEDIUM",
+      "retention": "keep_last_3",
+      "checksum_md5": "h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3",
+      "backup_status": "ready",
+      "transfer_method": "differential_sync",
+      "verification": "pending"
+    },
+    {
+      "id": "cache_models",
+      "name": "Model Weights Cache",
+      "description": "Cached model weights for local inference",
+      "path": "~/.claude/integrations/models/cache",
+      "size_gb": 1.2,
+      "priority": "LOW",
+      "retention": "rebuild_if_needed",
+      "checksum_md5": "c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8",
+      "backup_status": "ready",
+      "transfer_method": "clean_cache",
+      "verification": "pending"
+    },
+    {
+      "id": "training_data",
+      "name": "Training Datasets",
+      "description": "Labeled data for model training and fine-tuning",
+      "path": "~/.claude/integrations/training/data",
+      "size_gb": 0.9,
+      "priority": "LOW",
+      "retention": "archive_older",
+      "checksum_md5": "s2t3u4v5w6x7y8z9a0b1c2d3e4f5g6h7",
+      "backup_status": "ready",
+      "transfer_method": "archive_transfer",
+      "verification": "pending"
+    }
+  ],
+  "summary": {
+    "total_items": 6,
+    "high_priority": 2,
+    "medium_priority": 2,
+    "low_priority": 2,
+    "total_high_priority_gb": 3.1,
+    "total_medium_priority_gb": 3.3,
+    "total_low_priority_gb": 2.1
+  },
+  "transfer_plan": {
+    "phase_1": {
+      "description": "High-priority transfer (3.1 GB)",
+      "items": ["cache_typesafe", "cache_embeddings"],
+      "estimated_time_minutes": 60,
+      "bandwidth_mbps": 100
+    },
+    "phase_2": {
+      "description": "Medium-priority transfer (3.3 GB)",
+      "items": ["logs_claude_api", "db_snapshots"],
+      "estimated_time_minutes": 90,
+      "bandwidth_mbps": 100
+    },
+    "phase_3": {
+      "description": "Low-priority cleanup (2.1 GB)",
+      "items": ["cache_models", "training_data"],
+      "estimated_time_minutes": 60,
+      "bandwidth_mbps": 50
+    }
+  },
+  "backup_strategy": {
+    "copies": 2,
+    "locations": ["Claude-Data-Vault", "GitHub-Backup"],
+    "verification": "checksums_on_all_files",
+    "restore_test": "before_deletion"
+  },
+  "current_disk_state": {
+    "used_gb": 183,
+    "total_gb": 228,
+    "available_gb": 45,
+    "utilization_percent": 93
+  },
+  "projected_after_transfer": {
+    "used_gb": 152,
+    "total_gb": 228,
+    "available_gb": 76,
+    "utilization_percent": 67
+  }
+}
