@@ -1,0 +1,9 @@
+grokrules:
+  version: 2.2.0
+  enabled: true
+  position_limits: true
+  exposure_monitoring: true
+  data_freshness_check: true
+  balance_validation: true
+  leverage_prevention: true
+  automatic_blocking: true

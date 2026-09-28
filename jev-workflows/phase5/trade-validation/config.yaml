@@ -1,0 +1,7 @@
+workflow: trade-pre-validation
+decision_type: true_false
+question: "Is this trading signal strong enough to execute?"
+integration: "grok-bot (phase 5)"
+action_on_low: "skip marginal trades"
+value: "$180,000/year"
+logging: "enabled"

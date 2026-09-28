@@ -1,0 +1,9 @@
+ecc:
+  version: 2.0.0
+  operating_system: true
+  agents_capacity: 500
+  skills_registry: true
+  agent_lifecycle: true
+  resource_allocation: true
+  performance_monitoring: true
+  coordination_bus: true

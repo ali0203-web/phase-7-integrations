@@ -1,0 +1,8 @@
+studiarchive:
+  version: 1.0.0
+  enabled: true
+  asset_versioning: true
+  video_storage: true
+  script_archiving: true
+  performance_tracking: true
+  remix_capability: true

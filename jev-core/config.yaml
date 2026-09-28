@@ -1,0 +1,15 @@
+jev:
+  version: 1.0.0
+  enabled: true
+  provider: typesafe-ai
+  api_endpoint: "https://api.typesafe.ai/v1"
+  pricing: "$0.042 per million input tokens"
+  output_tokens: "free"
+  response_time: "70-500ms"
+  confidence_scoring: true
+  decision_types:
+    - choice
+    - score
+    - true_false
+  authentication: "api_key_from_env"
+  error_handling: "escalate_to_claude"

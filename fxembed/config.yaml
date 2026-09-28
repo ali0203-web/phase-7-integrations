@@ -1,0 +1,5 @@
+fxembed:
+  version: 2.0.0
+  enabled: true
+  advanced_mode: true
+  scaling: true

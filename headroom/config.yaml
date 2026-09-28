@@ -1,0 +1,7 @@
+headroom:
+  version: 1.0.0
+  compression_level: aggressive
+  preserve_semantics: true
+  target_tokens: 20000
+  auto_compression: true
+  lossless: true

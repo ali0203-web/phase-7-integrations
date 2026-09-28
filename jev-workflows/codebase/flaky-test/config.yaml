@@ -1,0 +1,6 @@
+workflow: flaky-test-detection
+decision_type: true_false
+question: "This failure is caused by code change, not flaky test?"
+confidence_threshold: 0.80
+action_on_low: "retry once before Claude"
+logging: "enabled"

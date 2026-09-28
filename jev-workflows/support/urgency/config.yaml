@@ -1,0 +1,5 @@
+workflow: urgency-detection
+decision_type: true_false
+question: "Customer says something is broken right now?"
+action_on_true: "escalate immediately"
+logging: "enabled"

@@ -1,0 +1,9 @@
+moviestudio:
+  version: 2.0.0
+  enabled: true
+  video_generation: true
+  script_generation: true
+  editing_pipeline: true
+  caption_generation: true
+  multi_format_export: true
+  output_formats: [youtube, tiktok, instagram, shorts]

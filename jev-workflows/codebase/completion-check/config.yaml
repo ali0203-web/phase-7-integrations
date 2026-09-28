@@ -1,0 +1,5 @@
+workflow: completion-validation
+decision_type: true_false
+question: "This diff fully satisfies the task description?"
+action_on_low: "send task back for revision"
+logging: "enabled"

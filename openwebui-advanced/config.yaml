@@ -1,0 +1,7 @@
+openwebui-advanced:
+  version: 3.0.0
+  enabled: true
+  enterprise_mode: true
+  distributed: true
+  high_performance: true
+  redundancy: true

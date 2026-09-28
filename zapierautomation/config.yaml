@@ -1,0 +1,8 @@
+zapierautomation:
+  version: 2.0.0
+  enabled: true
+  app_connections: true
+  workflow_automation: true
+  ai_steps: true
+  error_handling: true
+  scaling: true

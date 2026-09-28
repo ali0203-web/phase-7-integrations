@@ -1,0 +1,5 @@
+workflow: ticket-routing
+decision_type: choice
+question: "Which team owns this ticket?"
+options: ["sales", "support", "engineering", "billing"]
+logging: "enabled"

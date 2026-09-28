@@ -1,0 +1,8 @@
+voicereceptionist:
+  version: 2.1.0
+  enabled: true
+  speech_recognition: true
+  intent_understanding: true
+  tts_response: true
+  appointment_booking: true
+  24_7_availability: true

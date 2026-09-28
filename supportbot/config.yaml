@@ -1,0 +1,9 @@
+supportbot:
+  version: 1.9.0
+  enabled: true
+  documentation_integration: true
+  natural_language_qa: true
+  response_generation: true
+  human_routing: true
+  learning_feedback: true
+  concurrent_sessions: 1000+

@@ -1,0 +1,4 @@
+caveman:
+  simplification_engine: true
+  code_optimization: true
+  refactoring_suggestions: true

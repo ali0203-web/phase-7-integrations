@@ -1,0 +1,9 @@
+lovable:
+  version: 1.8.0
+  enabled: true
+  description_to_website: true
+  responsive_design: true
+  seo_optimization: true
+  payment_processing: true
+  form_builder: true
+  hosting: true

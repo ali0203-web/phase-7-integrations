@@ -1,0 +1,6 @@
+workflow: commit-type
+decision_type: choice
+question: "What type of commit is this?"
+options: ["feat", "fix", "refactor", "docs", "chore"]
+use_case: "automated changelog generation"
+logging: "enabled"

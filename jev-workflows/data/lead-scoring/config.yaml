@@ -1,0 +1,5 @@
+workflow: lead-scoring
+decision_type: score
+question: "How well does this company fit ideal customer profile?"
+scale: "1-10"
+logging: "enabled"

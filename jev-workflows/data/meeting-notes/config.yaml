@@ -1,0 +1,5 @@
+workflow: meeting-notes
+decision_type: true_false
+question: "These notes contain action item with owner?"
+action_on_true: "send to Claude for task creation"
+logging: "enabled"

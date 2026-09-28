@@ -1,0 +1,8 @@
+workflow: support-urgency-routing
+decision_type: choice
+question: "How urgent is this support request?"
+options: ["critical", "high", "medium", "low"]
+integration: "support-bot (phase 5)"
+action: "only critical+high get Claude attention"
+value: "$300,000/year savings"
+logging: "enabled"

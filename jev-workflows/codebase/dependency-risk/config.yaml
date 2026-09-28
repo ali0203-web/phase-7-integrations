@@ -1,0 +1,6 @@
+workflow: dependency-risk
+decision_type: score
+question: "How risky is this version bump?"
+scale: "1-5"
+action_on_high: "run full test suite + Claude review"
+logging: "enabled"

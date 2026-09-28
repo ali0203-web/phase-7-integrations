@@ -1,0 +1,11 @@
+9router:
+  version: 1.0.0
+  default_strategy: cost-optimal
+  local_models:
+    - phi
+    - mistral
+    - openchat
+  cloud_models:
+    - claude-opus
+  caching: true
+  batch_optimization: true

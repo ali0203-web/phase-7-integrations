@@ -1,0 +1,9 @@
+leadgen:
+  version: 1.6.0
+  enabled: true
+  maps_integration: true
+  contact_extraction: true
+  business_enrichment: true
+  filtering: true
+  export_formats: [csv, xlsx, json]
+  daily_capacity: 1000+

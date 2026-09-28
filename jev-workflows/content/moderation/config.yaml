@@ -1,0 +1,5 @@
+workflow: comment-moderation
+decision_type: choice
+question: "What should happen to this comment?"
+options: ["reply", "hide", "ignore"]
+logging: "enabled"

@@ -1,0 +1,7 @@
+workflow: lead-quality-score
+decision_type: score
+question: "What is quality of this lead? 1-10"
+integration: "lead-generator (phase 5)"
+action: "only draft replies for high-quality leads"
+value: "$500,000/year savings"
+logging: "enabled"

@@ -1,0 +1,4 @@
+workflow: duplicate-detection
+decision_type: true_false
+question: "These two records describe same customer?"
+logging: "enabled"

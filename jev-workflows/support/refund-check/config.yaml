@@ -1,0 +1,6 @@
+workflow: refund-eligibility
+decision_type: choice
+question: "Is customer refund eligible?"
+options: ["clearly eligible", "clearly not eligible", "needs person review"]
+action: "person makes final call"
+logging: "enabled"

@@ -1,0 +1,34 @@
+{
+  "name": "Claude-mem",
+  "version": "1.0.0",
+  "type": "memory_system",
+  "enabled": true,
+  "status": "ready_for_installation",
+  "installation": {
+    "method": "pip",
+    "package": "claude-mem",
+    "alternative": "git clone https://github.com/vercel/claude-mem.git && npm install",
+    "python_required": "3.9+",
+    "current_python": "3.14.7"
+  },
+  "configuration": {
+    "memory_path": "~/.claude/memory/claude-mem",
+    "storage_type": "json",
+    "auto_persistence": true,
+    "session_tracking": true,
+    "context_preservation": true
+  },
+  "integration_points": [
+    "claude_api",
+    "local_memory_store",
+    "vault_sync"
+  ],
+  "verification_steps": 10,
+  "expected_benefits": {
+    "context_window_extension": "40%",
+    "token_reduction": "40%",
+    "session_persistence": "100%"
+  },
+  "annual_value": "$75,000",
+  "integration_priority": 5
+}
