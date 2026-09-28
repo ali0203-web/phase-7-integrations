@@ -3,3 +3,36 @@ decision_type: true_false
 question: "This diff fully satisfies the task description?"
 action_on_low: "send task back for revision"
 logging: "enabled"
+
+# Phase 7a Optimization: Enhanced with context and pattern detection
+confidence_threshold: 0.65
+confidence_target: 0.86
+escalation_target: 0.08
+
+# Context sources for improved decision-making
+context_sources:
+  - test_history_cache: 90  # days of test failure patterns
+  - task_completion_patterns: true  # analyze successful vs failed completions
+  - diff_size_analysis: true  # account for diff complexity
+  - related_pr_context: true  # check similar PRs for patterns
+
+# Enhanced decision criteria
+decision_criteria:
+  - task_description_coverage: 0.95  # does diff address all requirements?
+  - test_suite_pass_rate: 0.98  # do all relevant tests pass?
+  - breaking_change_detection: 0  # no breaking changes allowed
+  - documentation_completeness: 0.90  # for public APIs
+  - code_quality_score: 0.85  # lint, complexity, coverage
+
+# Escalation rules
+escalate_when:
+  - confidence < 0.65
+  - test_pass_rate < 0.98
+  - unclear_task_completion: true
+  - conflicting_requirements: true
+  - manual_review_requested: true
+
+# Reference implementations
+modules:
+  - completion-check-context-fetcher  # fetches 90-day history
+  - completion-check-pattern-detector  # analyzes success patterns
