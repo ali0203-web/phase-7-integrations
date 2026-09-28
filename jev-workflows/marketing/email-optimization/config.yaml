@@ -1,0 +1,21 @@
+workflow: email-optimization
+decision_type: score
+question: "What email subject line is optimal (1-5 quality score)?"
+action_on_high: "use suggested subject"
+logging: "enabled"
+
+# Phase 7b: Template from Hook Selection (0.98)
+confidence_threshold: 0.92
+confidence_target: 0.95
+escalation_target: 0.03
+
+analysis:
+  urgency_words: true  # limited time, exclusive
+  curiosity_gap: true  # mystery, questions
+  personalization: true  # uses name
+  length_analysis: true  # not too long
+  ctr_prediction: true  # estimated click rate
+  spam_score: true  # won't hit spam filters
+
+# Annual value: $200K
+# Daily volume: 140+ subjects evaluated
