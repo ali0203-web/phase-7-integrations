@@ -1,0 +1,7 @@
+oh-my-openagent:
+  version: 1.5.0
+  agent_composition: true
+  predefined_templates: true
+  error_recovery: true
+  agent_chaining: true
+  parallel_execution: true

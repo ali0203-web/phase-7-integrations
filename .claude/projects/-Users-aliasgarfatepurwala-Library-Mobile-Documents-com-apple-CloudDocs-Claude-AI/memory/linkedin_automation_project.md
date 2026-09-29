@@ -45,12 +45,12 @@ metadata:
 - **Function**: Prospect scraping + email sending via official LinkedIn API
 
 ### Airtable
-- **API Token**: `patTE10Gp8VDABKoq.1c95d12e430d75a1910acf2e10239c8b1d52b7fc7375a34298910fabb42b7268`
+- **API Token**: [STORED IN SECURE VAULT]
 - **Base ID**: `appqyMQdqnVBfpW34`
 - **Table**: `Email_Sends` (columns: Name, Email, Subject, Sent At, Auto Sent, Confidence Score, Status)
 
 ### Slack
-- **Webhook URL**: `https://hooks.slack.com/services/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`
+- **Webhook URL**: [STORED IN SECURE VAULT]
 - **Status**: Tested & working (test message verified)
 
 ## Code Files

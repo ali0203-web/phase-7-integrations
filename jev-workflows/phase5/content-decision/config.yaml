@@ -1,0 +1,7 @@
+workflow: content-worth-video
+decision_type: true_false
+question: "Is this topic worth video production?"
+integration: "video-channel (phase 5)"
+action: "skip low-value topics"
+value: "$400,000/year savings"
+logging: "enabled"

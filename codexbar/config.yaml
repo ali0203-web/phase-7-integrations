@@ -1,0 +1,4 @@
+codexbar:
+  menubar_display: true
+  token_tracking: true
+  cost_alerts: true

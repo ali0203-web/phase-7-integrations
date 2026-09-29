@@ -1,0 +1,10 @@
+workflow: pr-triage
+decision_type: choice
+question: "What does this PR need?"
+options:
+  - "docs-only: documentation update only"
+  - "quick-review: straightforward changes"
+  - "careful-review: complex or risky changes"
+confidence_threshold: 0.75
+escalation: "careful reviews get strongest model"
+logging: "enabled"

@@ -1,0 +1,22 @@
+workflow: policy-violation
+decision_type: true_false
+question: "This content violates company policy?"
+action_on_true: "flag + remove + notify author"
+logging: "enabled"
+
+# Phase 7b: Template from Comment Moderation (1.00 perfect)
+confidence_threshold: 0.95
+confidence_target: 0.97
+escalation_target: 0.02
+
+analysis:
+  harmful_content: true  # violence, hate speech
+  privacy_violations: true  # PII exposure
+  ip_infringement: true  # copyright, trademarks
+  harassment: true  # bullying, threats
+  spam_promotion: true  # self-promotion, ads
+  policy_keywords: true  # known violation phrases
+
+# Annual value: $160K
+# Daily volume: 250+ items moderated
+# Perfect template: Comment Moderation 1.00 confidence

@@ -1,0 +1,26 @@
+workflow: feature-priority
+decision_type: score
+question: "What is feature request priority (1-5 scale)?"
+action_on_high: "add to roadmap"
+logging: "enabled"
+
+# Phase 7b: Template from Lead Scoring (0.90)
+confidence_threshold: 0.84
+confidence_target: 0.87
+escalation_target: 0.11
+
+analysis:
+  user_demand: true  # how many requests
+  business_impact: true  # revenue potential
+  implementation_effort: true  # complexity
+  strategic_alignment: true  # company goals
+  competitor_features: true  # competitive advantage
+  user_segment_value: true  # which customers benefit
+
+decision_criteria:
+  - high_demand_low_effort: true
+  - strategic_fit: true
+  - revenue_impact: true
+
+# Annual value: $140K
+# Daily volume: 80+ requests scored

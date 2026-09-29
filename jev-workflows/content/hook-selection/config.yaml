@@ -1,0 +1,5 @@
+workflow: hook-selection
+decision_type: choice
+question: "Which is clearest hook for this content?"
+rubric: "applies to 3-10 candidate hooks"
+logging: "enabled"

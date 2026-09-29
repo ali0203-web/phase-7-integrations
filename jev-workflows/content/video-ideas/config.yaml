@@ -1,0 +1,5 @@
+workflow: video-ideas
+decision_type: true_false
+question: "This comment asks question answerable in video?"
+action_on_true: "add to topic list"
+logging: "enabled"

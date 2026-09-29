@@ -1,0 +1,26 @@
+workflow: upsell-detection
+decision_type: true_false
+question: "This customer has upsell opportunity?"
+action_on_true: "trigger sales outreach"
+logging: "enabled"
+
+# Phase 7b: Template from Lead Scoring (0.90)
+confidence_threshold: 0.86
+confidence_target: 0.89
+escalation_target: 0.09
+
+analysis:
+  usage_patterns: true  # high product adoption
+  revenue_capacity: true  # can afford upgrade
+  competitor_risk: true  # at risk of switching
+  time_since_purchase: true  # ready for expansion
+  feature_gaps: true  # needs premium features
+  engagement_level: true  # high platform engagement
+
+decision_criteria:
+  - high_usage + high_revenue: true
+  - feature_need_match: true
+  - churn_risk_high: true
+
+# Annual value: $220K
+# Daily volume: 120+ customers evaluated

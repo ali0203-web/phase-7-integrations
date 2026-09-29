@@ -1,0 +1,9 @@
+superpowers:
+  version: 3.0.0
+  enabled: true
+  skills_framework: true
+  skill_composition: true
+  skill_chaining: true
+  max_chain_depth: 20
+  versioning: true
+  rollback: true

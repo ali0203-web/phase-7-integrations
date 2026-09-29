@@ -1,0 +1,6 @@
+agentmemory:
+  version: 1.0.0
+  engine: lii
+  persist_path: ~/.claude/agent-memory
+  auto_compress: true
+  compression_ratio: 0.7

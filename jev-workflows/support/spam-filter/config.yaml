@@ -1,0 +1,5 @@
+workflow: spam-detection
+decision_type: true_false
+question: "This message is pitch or spam, not customer?"
+action_on_true: "filter out"
+logging: "enabled"

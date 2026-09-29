@@ -1,0 +1,27 @@
+workflow: churn-prediction
+decision_type: score
+question: "What is customer churn risk (1-5 scale)?"
+action_on_high: "trigger retention campaign"
+logging: "enabled"
+
+# Phase 7b: Template from Lead Scoring (0.90)
+confidence_threshold: 0.85
+confidence_target: 0.88
+escalation_target: 0.10
+
+analysis:
+  engagement_trend: true  # declining activity
+  payment_history: true  # late/failed payments
+  support_tickets: true  # increased complaints
+  feature_adoption: true  # unused features
+  competitor_signals: true  # activity on competitor sites
+  renewal_date: true  # approaching renewal
+
+decision_criteria:
+  - declining_engagement: true
+  - payment_issues: true
+  - high_support_tickets: true
+  - low_feature_usage: true
+
+# Annual value: $250K
+# Daily volume: 150+ customers scored

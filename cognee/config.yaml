@@ -1,0 +1,5 @@
+cognee:
+  version: 1.0.0
+  agent_mode: true
+  memory_sharing: true
+  realtime_updates: true

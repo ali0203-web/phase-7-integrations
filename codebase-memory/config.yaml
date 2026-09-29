@@ -1,0 +1,7 @@
+codebase-memory:
+  version: 1.0.0
+  parse_mode: semantic
+  visualization_enabled: true
+  dependency_mapping: true
+  watch_mode: true
+  auto_update: true

@@ -1,0 +1,9 @@
+grokbot:
+  version: 2.8.0
+  enabled: true
+  autonomous_trading: true
+  markets_monitored: 100+
+  24_7_operation: true
+  custom_rules: true
+  execution_logging: true
+  profit_generation: true

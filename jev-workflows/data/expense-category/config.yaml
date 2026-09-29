@@ -1,0 +1,5 @@
+workflow: expense-category
+decision_type: choice
+question: "Which expense category applies?"
+options: "from company chart of accounts"
+logging: "enabled"

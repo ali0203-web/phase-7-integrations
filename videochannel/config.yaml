@@ -1,0 +1,10 @@
+videochannel:
+  version: 2.5.0
+  enabled: true
+  topic_to_video: true
+  script_generation: true
+  voiceover_synthesis: true
+  visual_generation: true
+  editing: true
+  monetization: true
+  videos_per_day: 4

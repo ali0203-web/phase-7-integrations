@@ -1,0 +1,9 @@
+grokanalysis:
+  version: 2.0.0
+  enabled: true
+  market_analysis: true
+  rule_engine: true
+  pattern_detection: true
+  anomaly_detection: true
+  probability_estimates: true
+  signal_generation: true

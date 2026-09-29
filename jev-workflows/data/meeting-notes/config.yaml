@@ -1,0 +1,50 @@
+workflow: meeting-notes
+decision_type: true_false
+question: "These notes contain action item with owner?"
+action_on_true: "send to Claude for task creation"
+logging: "enabled"
+
+# Phase 7a Optimization: Enhanced with larger context and speaker detection
+confidence_threshold: 0.70
+confidence_target: 0.85
+escalation_target: 0.08
+
+# Context window expansion (4K → 8K tokens)
+context_window: 8000
+token_budget: 8192
+
+# Enhanced analysis capabilities
+analysis:
+  speaker_detection: true  # identify who said what
+  action_item_extraction: true  # extract action items with owners
+  sentiment_analysis: true  # track mood/urgency
+  decision_logging: true  # log decisions and consensus points
+  follow_up_tracking: true  # track follow-up meetings needed
+
+# Classification categories
+classify_as:
+  - action_items  # decisions with owners
+  - discussions  # general conversation
+  - decisions  # decisions made
+  - info_only  # informational content
+  - followup_needed  # needs follow-up meeting
+
+# Action item quality criteria
+action_item_rules:
+  requires_owner: true  # must have assigned person
+  requires_deadline: true  # should have due date
+  requires_description: true  # should describe what
+  min_confidence: 0.70  # minimum confidence to act
+
+# Escalation triggers
+escalate_when:
+  - confidence < 0.70
+  - unclear_ownership: true
+  - conflicting_decisions: true
+  - no_clear_action_items: true
+  - follow_up_needed: true
+
+# Reference implementations
+modules:
+  - speaker-role-classifier  # identifies speakers and roles
+  - action-item-extractor  # extracts action items with context

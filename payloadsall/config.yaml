@@ -1,0 +1,8 @@
+payloadsall:
+  version: 3.0.0
+  enabled: true
+  owasp_top_10: true
+  exploitation_techniques: true
+  burp_intruder: true
+  postman_collections: true
+  poc_documentation: true

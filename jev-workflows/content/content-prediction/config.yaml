@@ -1,0 +1,28 @@
+workflow: content-prediction
+decision_type: score
+question: "Will this content perform well (1-5 performance score)?"
+action_on_high: "prioritize distribution"
+logging: "enabled"
+
+# Phase 7b: Template from Hook Selection (0.98)
+confidence_threshold: 0.90
+confidence_target: 0.93
+escalation_target: 0.05
+
+analysis:
+  topic_trend: true  # trending now?
+  audience_fit: true  # matches audience interests
+  format_performance: true  # video vs article
+  engagement_potential: true  # estimated reach
+  shareability: true  # likely to be shared
+  competition: true  # how much similar content
+
+decision_criteria:
+  - trending_topic: true
+  - audience_alignment: true
+  - high_shareability: true
+  - optimal_format: true
+
+# Annual value: $250K
+# Daily volume: 110+ content pieces analyzed
+# Template: Hook Selection (0.98 confidence)

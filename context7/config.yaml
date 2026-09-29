@@ -1,0 +1,6 @@
+context7:
+  version: 1.0.0
+  editor: claude-code
+  auto_update: true
+  update_interval: daily
+  full_text_index: true

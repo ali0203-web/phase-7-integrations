@@ -1,0 +1,44 @@
+workflow: flaky-test-detection
+decision_type: true_false
+question: "This failure is caused by code change, not flaky test?"
+confidence_threshold: 0.65
+confidence_target: 0.87
+escalation_target: 0.08
+action_on_low: "retry once before Claude"
+logging: "enabled"
+
+# Phase 7a Optimization: Historical failure patterns + environment context
+history_depth: 90  # 90-day failure cache
+track_environment: true  # OS, Node version, timezone, etc.
+statistical_modeling: true  # track failure patterns
+flake_threshold: 0.8  # >80% pass rate = flaky, not broken
+
+# Analysis factors
+analysis:
+  failure_history: true  # previous runs of this test
+  environment_vars: true  # OS, Node, browsers, network
+  test_timing: true  # tests that fail intermittently
+  test_dependencies: true  # tests that depend on others
+  seed_variation: true  # does random seed affect result
+
+# Flakiness detection
+flakiness:
+  pass_rate_range: [0.50, 0.99]  # flaky if in this range
+  min_samples: 10  # need 10+ runs to confirm flakiness
+  confidence_boost: true  # boost confidence if pattern clear
+
+# Environment context
+environment:
+  os: true
+  node_version: true
+  browser: true
+  parallel_workers: true
+  network_conditions: true
+  time_of_day: true
+  test_isolation: true
+
+# Reference implementations
+modules:
+  - flaky-test-history-cache  # 90-day failure patterns
+  - flaky-test-analyzer  # statistical analysis
+  - environment-context-mapper  # environment impact

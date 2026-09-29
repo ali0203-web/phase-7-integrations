@@ -1,0 +1,8 @@
+grokmonitor:
+  version: 1.3.0
+  enabled: true
+  decision_logging: true
+  audit_trail: true
+  compliance_records: true
+  performance_analysis: true
+  transparency: true

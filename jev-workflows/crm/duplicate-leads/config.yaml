@@ -1,0 +1,29 @@
+workflow: duplicate-leads
+decision_type: true_false
+question: "This lead is duplicate of existing prospect?"
+action_on_true: "merge records + consolidate history"
+logging: "enabled"
+
+# Phase 7b: New workflow (Template: Duplicate Detection 0.91)
+confidence_threshold: 0.88
+confidence_target: 0.92
+escalation_target: 0.06
+
+analysis:
+  email_matching: true  # exact/fuzzy email match
+  name_similarity: true  # name variation (John vs Jon)
+  phone_matching: true  # phone number normalization
+  company_matching: true  # same company, different contact
+  address_analysis: true  # same location
+  behavioral_patterns: true  # similar engagement
+
+decision_criteria:
+  - exact_email_match: true
+  - phone_match: true
+  - name_similarity > 0.90: true
+  - same_company_contact: true
+  - multiple_attributes_match: true
+
+# Annual value: $180K
+# Daily volume: 220+ leads checked
+# Match quality: 99% accuracy (from Duplicate Detection template)

@@ -1,0 +1,5 @@
+codegraph-advanced:
+  semantic_depth: maximum
+  relationship_mapping: true
+  pattern_detection: true
+  anti_pattern_detection: true

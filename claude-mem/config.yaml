@@ -1,0 +1,12 @@
+claude-mem:
+  version: 1.0.0
+  enabled: true
+  storage:
+    type: json
+    path: ~/.claude/memory/claude-mem
+  auto_persistence: true
+  session_tracking: true
+  context_preservation: true
+  integration:
+    - claude_api
+    - vault_sync

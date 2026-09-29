@@ -1,0 +1,45 @@
+workflow: dependency-risk
+decision_type: score
+question: "How risky is this version bump?"
+scale: "1-5"
+confidence_target: 0.86
+escalation_target: 0.08
+action_on_high: "run full test suite + Claude review"
+logging: "enabled"
+
+# Phase 7a Optimization: Enhanced with changelog, CVE, breaking changes
+security_scanning: true
+changelog_fetching: true
+breaking_change_detection: true
+dependency_graph_analysis: true
+usage_analysis: true
+
+# Risk scoring factors (total = 100)
+risk_factors:
+  semver_change: 20  # major > minor > patch
+  breaking_changes: 30  # breaking API changes
+  security_vulnerabilities: 25  # CVEs in this version
+  dependency_chain: 15  # transitive dependencies
+  usage_frequency: 10  # how critical is this package
+
+# Data sources
+sources:
+  github_api: true  # fetch changelog
+  npm_api: true  # package stats
+  security_db: true  # CVE database
+  release_notes: true  # manual release notes
+  git_history: true  # commit log
+
+# Escalation rules
+escalate_when:
+  - risk_score >= 70
+  - breaking_changes: true
+  - security_vulnerability: true
+  - major_version_jump: true  # e.g. v1 -> v3
+  - transitive_vulnerabilities: true
+
+# Reference implementations
+modules:
+  - changelog-fetcher  # fetch release notes
+  - cve-scanner  # check for security issues
+  - breaking-change-detector  # detect API breaking changes

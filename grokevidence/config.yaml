@@ -1,0 +1,8 @@
+grokevidence:
+  version: 1.5.0
+  enabled: true
+  source_validation: true
+  claim_verification: true
+  rumor_detection: true
+  conflicting_claims: true
+  evidence_scoring: true

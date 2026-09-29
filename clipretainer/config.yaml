@@ -1,0 +1,8 @@
+clipretainer:
+  version: 1.2.0
+  enabled: true
+  highlight_detection: true
+  vertical_format: true
+  auto_captions: true
+  effect_application: true
+  optimization: [tiktok, instagram, youtube-shorts]

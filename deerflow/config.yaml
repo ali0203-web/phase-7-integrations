@@ -1,0 +1,8 @@
+deerflow:
+  version: 1.0.0
+  enabled: true
+  research_domain: fusion_energy
+  startup_evaluation: true
+  funding_tracking: true
+  patent_monitoring: true
+  competitive_analysis: true
